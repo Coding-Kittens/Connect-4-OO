@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="game">
+  <table id="board"></table>
+</div>
+
+<div class="imgBtn hiddenObj">
+</div>
+
+<div class="options">
+  <button type="button" id="mBtn" name="menuBtn">Main Menu</button>
+  <button type="button" id="rBtn" name="restartBtn">Surrender</button>
+  <h3>Are you sure you want to surrender? The other player will win by default!</h3>
+</div>
+
+<h2 class="hiddenObj">Player 1</h2>
+
+
+<form class="mainMenu menu" action="index.html" method="post">
+  <h1>Connect 4!</h1>
+  <button type="button" name="AddPlayerBtn">Add Player</button>
+  <button type="submit" name="playbtn">Play!</button>
+  </form>
+
+
+
+<form class="addPlayer menu hiddenObj">
+  <label id="color"><input type="color" name="p1Color" value="#FF0500">Player 1 Color</label>
+  <label id="pvp"> <input type="radio" name="PlayerVs" value="false">Player</label>
+  <label id="pvc"><input type="radio" name="PlayerVs" value="true">Computer</label>
+  <button type="submit" name="doneBtn">Done!</button>
+</form>
+
+
+
+
+
+<script src="connect4.js"></script>
+
+</script>
+
+
+</body>
+</html>

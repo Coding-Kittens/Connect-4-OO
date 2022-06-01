@@ -1,0 +1,243 @@
+/* game board table */
+
+body{
+  background-color: #222529;
+
+}
+
+h1{
+  position: absolute;
+  left: 35%;
+  top: -5%;
+  background-color: #3D4C4E;
+  font-size: 3em;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+}
+h2
+{
+  position: absolute;
+  background-color: #667C7F;
+  background-color: red;
+  left: 84%;
+  font-size: 2em;
+  padding: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-radius: 15px;
+  filter: saturate(40%);
+  transform: scaleY(1);
+  transition: transform 1.5s;
+}
+
+
+#board{
+
+  position: absolute;
+  left: 25%;
+  top: 2%;
+
+}
+
+
+
+#board td {
+  background-color: #373E44;
+  width: 100px;
+  height: 100px;
+  border: solid 1px #666;
+}
+
+
+
+
+.piece {
+  position: relative;
+  border-radius: 100%;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  top: -0.02%;
+  filter: saturate(40%);
+}
+
+
+.imgBtn
+{
+  position: absolute;
+  display: inline-block;
+  left: 1%;
+  top: 5%;
+  width: 6%;
+  height: 12%;
+  background-image: url("sprites/gear.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.imgBtn:hover ~ .options
+{
+  left: -10%;
+}
+
+.options h3
+{
+  position: absolute;
+  left: 40%;
+  top: 70%;
+width: 50%;
+
+visibility: hidden;
+}
+
+.options button:hover
+{
+  background-color: #9BB3B7;
+
+}
+
+
+button[name ="restartBtn"]:hover ~ h3
+{
+visibility: visible;
+}
+
+
+.options{
+  position: absolute;
+  display: inline-block;
+  left: -50%;
+  top: 5%;
+  border-radius: 15px;
+  background-color: #585999;
+  width: 30%;
+  height: 50%;
+  transition: left 2s;
+}
+
+.options:hover
+{
+left: -10%;
+}
+
+
+
+.options button
+{
+position: absolute;
+background-color: #5B7C81;
+left: 40%;
+top: 60%;
+font-size: 2em;
+}
+
+button[name ="menuBtn"]
+{
+  top: 30%;
+}
+
+
+.menu
+{
+position: absolute;
+display: inline-block;
+z-index: 3;
+width: 60%;
+height: 50%;
+left: 20%;
+top: 10%;
+padding: 20px;
+background-color: #5B7C81;
+border-radius: 15px;
+}
+
+.menu button
+{
+  position: absolute;
+  font-size: 2.5em;
+  left: 36%;
+  top: 87%;
+  background-color: #585999;
+}
+
+.menu button[name ="AddPlayerBtn"]
+{
+  left: 50%;
+}
+
+
+.menu button[name ="doneBtn"]
+{
+  left: 42%;
+}
+
+
+.menu button:hover{
+background-color: #999AD2;
+}
+
+.menu label
+{
+  position: relative;
+  font-size: 2.5em;
+  left: -10%;
+  top: 45%;
+  margin: 10px;
+}
+
+.menu input{
+  background-color: #9BB3B7;
+}
+.menu input:hover
+{
+  background-color: #585999;
+}
+
+
+.playerSlot
+{
+  display: inline-block;
+  position: relative;
+  top: 18%;
+  width: 200px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 15px;
+  filter: saturate(40%);
+}
+.playerSlot h3{
+  visibility: visible;
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  left: 1%;
+  top: 20%;
+  z-index: 3;
+}
+
+
+#color
+{
+  top: 20%;
+  left: 30%;
+}
+
+
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  background-color:#3D4C4E;
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: #667C7F;
+}
+
+.hiddenObj{
+  visibility: hidden;
+}
